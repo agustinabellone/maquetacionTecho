@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+:root {
+  --color-boton: #0092DD;
+  --color-boton-hover: #0093ddb2;
+}
+
+@font-face {    
+  font-family: "font-boton";    
+  src: url("tipografia/novecento-wide/Novecentowide-DemiBold.woff") format('woff');
+}
+
+@font-face {    
+  font-family: "font-copyright";    
+  src: url("tipografia/novecento-wide/Novecentowide-Normal.woff") format('woff');
+}
+  
+
+.contenido {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.imagen {
+  width: 50%;
+  background-image: url(img/imagen-login.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ingreso {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+.contenedor-logo-boton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+}
+.logo {
+  width: 250px;
+}
+
+button {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-family: "font-boton";
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-boton);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--color-boton-hover);
+}
+
+.copyright {
+    color: black;
+    font-family: "font-copyright";
+    font-size: 14px;
+}
+
+
+/* Se oculta la imagen principal*/
+
+@media only screen and (max-width: 700px) {
+  .imagen {
+    display: none;
+  }
+
+  .ingreso {
+    width: 100%;
+  }
+}
