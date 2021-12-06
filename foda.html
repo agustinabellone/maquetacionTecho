@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TECHO - Planificación Anual</title>
+    <link rel="stylesheet" href="foda.css" />
+</head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logo-header.png" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Diagnóstico</a></li>
+          <li><a href="#">Metas</a></li>
+          <li><a href="#">Focos</a></li>
+          <li><a href="#">Presupuesto</a></li>
+          <li><a href="#">Planes <br> Operativos</a></li>
+          <li><a href="#">Objetivos <br> Personales</a></li>
+          <li><a href="#">Pedidos O.I</a></li>
+          <li>
+            <a href="login.html"><img src="svg/cerrar-sesion.svg" /></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-responsive">
+        <img src="svg/bars.svg" alt="" class="bars">
+      </div>
+    </header>
+    <section>
+      <h1>DIAGNÓSTICO</h1>
+
+      <article class="contenedor-selectores">
+        <button class="selector-activo">CREAR F.O.D.A</button>
+        <button class="selector-inactivo">VER AÑOS ANTERIORES</button>
+        <button class="selector-inactivo">VER DATA ESTUDIO</button>
+      </article>
+
+      <div class="contenedor-select">
+        <label class="label">AÑO</label>
+        <select>
+          <option selected="true" disabled="disabled">SELECCIONAR</option>
+          <option>2021</option>
+        </select>
+      </div>
+
+      <article class="contenedor-textareas">
+        <div class="grupo-textarea">
+          <div class=fortalezas>
+            <label class="label">FORTALEZAS</label>
+            <textarea name="textarea" rows="8" cols="50"></textarea>
+          </div>
+          <div class="debilidades">
+            <label class="label">DEBILIDADES</label>
+            <textarea name="textarea" rows="8" cols="50"></textarea>
+          </div>
+        </div>
+        <div class="grupo-textarea">
+          <div class="oportunidades">
+            <label class="label">OPORTUNIDADES</label>
+            <textarea name="textarea" rows="8" cols="50"></textarea>
+          </div>
+          <div class="amenazas">
+            <label class="label">AMENAZAS</label>
+            <textarea name="textarea" rows="8" cols="50"></textarea>
+          </div>
+        </div>
+      </article>
+      <div class="contenedor-boton">
+        <button class="boton-guardar">GUARDAR</button>
+      </div>
+    </section>
+    <footer>
+      <p class="copyright">Copyright TECHO © 2018-2021</p>
+    </footer>
+  </body>
+</html>
